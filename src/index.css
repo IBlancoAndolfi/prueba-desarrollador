@@ -1,54 +1,106 @@
-/* styles.css */
+
+/*Estilos para las palabras del "header"*/
+.header {
+  background-color: green;
+  color: green;
+  width:100%;
+  height: 60px;
+  margin-left: 0;
+  margin-top: 0;
+}
 
 /* Estilos para el contenedor principal */
 .container {
   max-width: 1024px;
   max-height: 768px;
   text-align: center;
-  margin: 0 auto;
-  outline-color: black;
+  margin: 0;
+  border: 5px solid;
+  border-radius: 5px;
+  outline-style: groove;
 }
 
 .container-details {
   max-width: 1024px;
-  min-height: 768px;
+  min-height: 350px;
   text-align: center;
   margin: 0 auto;
+  border: 5px solid;
+  border-radius: 5px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-left: 35%;
 }
 
 /* Estilos para los botones de cuenta */
 .button {
-  background-color: #3498db;
+  background-color:  #328c1e ;
   color: #ffffff;
   width: 200px;
   height: 50px;
-  padding: 10px 20px;
+  padding: 5px 20px;
   margin: 5px;
-  border: none;
-  border-radius: 5px;
   cursor: pointer;
-  float: left;
+  border-radius: 20px;
+  border-width: 3px;
+  border-color:springgreen;
 }
 .button:hover{
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);;
 }
 
 .button-back-menu {
-  background-color: #2ecc71;
-  align-content: left;
-  position: absolute;
-  top: 50%;
-  width: 100px;
+  background-color:  #328c1e ;
+  align-content: center;
+  width: 200px;
+  height: 50px;
+}
+
+.button-row {
+  justify-content: left;
+  align-content: center;
+  width: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin-left: 20px;
 }
 
 /* Estilos para el botón de paginación anterior */
 .button-previous {
-  background-color: #2ecc71;
+  background-color: #328c1e ;
 }
 
 /* Estilos para el botón de paginación siguiente */
 .button-next {
-  background-color: #2ecc71;
+  background-color: #328c1e ;
+}
+/*Estilos para el boton de salir*/
+
+.button-exit {
+  background-color: #328c1e;
+  text-align: center;
+  color: #ffffff;
+  display: flex;
+  width: 100px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 20px;
+  border-width: 2px;
+  border-color:springgreen;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.button-exit:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);;
+}
+.button-exit p{
+  text-align: center;
+  margin: auto;
 }
 
 /* Estilos para el mensaje de "No hay cuentas disponibles" */

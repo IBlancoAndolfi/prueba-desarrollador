@@ -24,11 +24,22 @@ const AccountDetailsPage = () => {
 
   return (
     <div className="container-details">
+      <div className="header">
+        <rect>.</rect>
+      </div>
+      <h5>Consulta tu saldo</h5>
       <h1>Este es tu saldo actual</h1>
-      <p>Saldo: {account.saldo}</p>
-      <p>Tipo de cuenta: {accountType}</p>
-      <p>Número de cuenta: {account.n}</p>
-      <button className= "button-back-menu"onClick={handleGoBack}>Volver al menú principal</button>
+      <div className="text">
+        <p>Saldo: {account.saldo}</p>
+        <p>Tipo de cuenta: {accountType}</p>
+        <p>Número de cuenta: {account.n}</p>
+      </div>
+      <button className= "button button-back-menu"onClick={() => navigate("/")}>Volver al menú principal</button>
+      <button  className="button-exit" onClick={() => window.location.replace('https://www.google.com.ar')}>
+          <p>
+              Salir
+              </p>
+        </button>
     </div>
   );
 };
