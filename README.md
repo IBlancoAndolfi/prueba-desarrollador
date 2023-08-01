@@ -1,9 +1,9 @@
 # Challenge Ignacio Blanco Andolfi
 
-Previamente, se debera instalar ### `NodeJs` 
-Se debera ejecutar el comenado `npm install react-router-dom` para instalar el paquete necesario.
+Previamente, se debera instalar `NodeJs` para el funcionamiento del programa.
+Se debera ejecutar el comando `npm install react-router-dom` para instalar el paquete necesario.
 
-### `npm start`
+### Ejecutar `npm start`
 
 Ejecutara la apliacacion en [http://localhost:3000] .
 
