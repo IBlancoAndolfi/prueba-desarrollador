@@ -5,9 +5,6 @@
     
 </head>
 <body>
-    <header id="header">
-        <p></p>
-    </header>
     <div id="root"></div>
     <script>
         // Función para consumir datos desde la URL
@@ -21,28 +18,6 @@
                 return [];
             }
         }
-
-        // Función para filtrar cuentas según los criterios
-        function filterAccounts(accounts) {
-            return accounts.filter(
-                (account) =>
-                    (account.moneda === "$" || account.moneda === "u$s") &&
-                    (account.tipo === "CA" || account.tipo === "CC")
-            );
-        }
-
-        // Lógica para dividir las cuentas en páginas de 6 elementos
-        function paginateAccounts(accounts, page, itemsPerPage) {
-            const startIndex = (page - 1) * itemsPerPage;
-            return accounts.slice(startIndex, startIndex + itemsPerPage);
-        }
-
-        // Consumir datos, filtrar cuentas y paginar
-        (async () => {
-            const data = await fetchAccountsData();
-            const filteredAccounts = filterAccounts(data);
-            console.log("Cuentas filtradas:", filteredAccounts);
-        })();
     </script>
 </body>
 </html>
